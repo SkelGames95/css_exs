@@ -1,8 +1,24 @@
 :root{
     --item-width: 100px;
 }
-section{
+.Container{
     border: 3px solid black;
+    margin-bottom: 1rem;
+    position: relative;
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: 50px 60px 60px 60px 60px 60px;
+    grid-template-areas:
+    "display display display display"
+    "operators operators operators operators"
+    "keypad keypad keypad equal"
+    "keypad keypad keypad equal"
+    "keypad keypad keypad equal"
+    "keypad keypad keypad equal";
+}
+section{
     margin-bottom: 1rem;
     position: relative;
     display: grid;
@@ -11,7 +27,8 @@ section{
 }
 section.Display{
     grid-template-columns: 90px 90px 90px 90px;
-    grid-template-rows: 60px;
+    grid-template-rows: 50px;
+    grid-area: display;
 }
 .Res{
     border: 1px solid rgb(138, 138, 163);
@@ -22,6 +39,7 @@ section.Display{
 section.Operators{
     grid-template-columns: 90px 90px 90px 90px;
     grid-template-rows: 60px;
+    grid-area: operators;
 }
 .Op{
     border: 1px solid rgb(138, 138, 163);
@@ -32,6 +50,7 @@ section.Operators{
 section.Equal{
     grid-template-columns: 90px;
     grid-template-rows: 60px 60px 60px 60px;
+    grid-area: equal;
 }
 .Eq{
     border: 1px solid rgb(138, 138, 163);
@@ -42,6 +61,7 @@ section.Equal{
 section.Keypad{
     grid-template-columns: 90px 90px 90px;
     grid-template-rows: 60px 60px 60px 60px;
+    grid-area: keypad;
 }
 .Kp{
     border: 1px solid rgb(138, 138, 163);
