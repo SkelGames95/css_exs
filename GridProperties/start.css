@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+    grid-template-rows: repeat(4, 150px);
+    grid-template-areas:
+    "gr gr gr gr gr gr"
+    "ye ye re re bl bl"
+    "ye ye re re bl bl"
+    "or or or or bl bl";
+}
+#green{
+    grid-area: gr;
+}
+#yellow{
+    grid-area: ye;
+}
+#red{
+    grid-area: re;
+}
+#blue{
+    grid-area: bl;
+}
+#orange{
+    grid-area: or;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
