@@ -1,10 +1,17 @@
+:root{
+    --color1: rgb(2, 2, 61);
+    --range: 100px;
+    --moon: rgb(229, 238, 187);
+    --round: 50px;
+}
+
 body {
-    background-color: #011212;
+    background-color: var(--color1);
 }
 
 .ball {
-    width: 100px;
-    height: 100px;
-    background-color: #ff8800;
-    border-radius: 50px;
+    width: var(--range);
+    height: var(--range);
+    background-color: var(--moon);
+    border-radius: var(--round);
 }
