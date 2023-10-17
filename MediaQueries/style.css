@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --midsize: 60px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+div.card{
+    display: grid;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    border: 2px solid rgb(180, 176, 176);
+    background-image: linear-gradient(rgb(180, 180, 180), white);
+    border-radius: 20px;
+    height: 420px;
+    width: 280px;
+    box-shadow: 5px 10px rgba(194, 194, 194, 0.466);
+    grid-template-rows: repeat(6, 70px);
+    grid-template-columns: 1, 280px;
+    grid-template-areas:
+    "up"
+    "image"
+    "image"
+    "image"
+    "eff"
+    "eff";
+}
+
+.top{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 35px, 35px;
+    grid-area: up;
+    grid-template-areas:
+    "rnd name name opt"
+    "rnd date date .";
+}
+.round{
+    border-radius: 50%;
+    width: var(--midsize);
+    height: var(--midsize);
+    margin: 5px;
+    background-color: white;
+    grid-area: rnd;
+}
+.image{
+    grid-area: image;
+}
+.text{
+    grid-area: eff;
+    display: grid;
+    grid-template-rows: repeat(5, 28px);
+    grid-template-columns: 1, 280px;
+    grid-template-areas: 
+    "."
+    "icons"
+    "desc"
+    "desc"
+    ".";
+}
+.name{
+    padding-top: 10px;
+    font-size: 20px;
+    height: fit-content;
+    width: 100px;
+    grid-area: name;
+}
+.date{
+    height: fit-content;
+    margin-bottom: 30px;
+    font-size: 14px;
+    grid-area: date;
+    color: rgba(255, 255, 255, 0.774);
+}
+div.opt{
+    height: fit-content;
+    width: fit-content;
+    font-size: 32px;
+    grid-area: opt;
+    padding-left: 40px;
+}
+.pic{
+    width: 276px;
+    height: 230px;
+}
+.icons{
+    grid-area: icons;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.small{
+    margin-right: 7px;
+}
+.description{
+    grid-area: desc;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13px;
+    text-align: justify;
+}
+span{
+    font-weight: bold;
+}
