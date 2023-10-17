@@ -8,7 +8,7 @@ html{
 }
 body{
     display: flex;
-    height: 927px; /* non capisco perché attribuendo il 100% non mi copre tutta la pagina*/
+    height: 100vh;
 }
 aside{
     display: flex;

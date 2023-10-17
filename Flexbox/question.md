@@ -9,3 +9,6 @@ The sidebar should have a size equal to 200px in width and should occupy the ent
 **Suggestion:**
 
 In order to move the avatar and the username at the end of the sidebar, assign the property `flex: 1` to the link list.
+
+
+"Appunti: -Se i tag main e footer non ti servono non ha senso lasciarli nell'html -Per l'altezza del body dovevi inserire 100vh per il viewport height, la percentuale di solito è relativa ad un altro elemento del file html che racchiude un elemento. -L'altezza della sidebar data in px risulta avere uno scroll che si potrebbe evitare. Con la misura dell'altezza del body in vh si risolve il problema"
