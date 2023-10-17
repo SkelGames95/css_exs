@@ -7,8 +7,7 @@
 body{
     display: flex;
     min-height: 100vh;
-    min-width: 100%;
-    justify-content: space-between;
+    gap: 20px;
 }
 #orange{
     width: 60ch;
@@ -25,11 +24,9 @@ body{
 #blue{
     width: 20ch;
 }
-section{
-    display: flex;
-}
+
 ul{
     display: flex;
+    align-items: center;
     flex-direction: column;
-    justify-content: center;
 }
