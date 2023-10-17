@@ -5,3 +5,6 @@ Try to replicate the layout displayed in asset/cards-desktop.jpg, cards-mobile.j
 [//]: # 'Use the Media Query rules to solve the exercise successfully.'
 
 Use the Media Query rules to solve the exercise successfully.
+
+
+"Appunti: -L'esercizio va bene, potevi forse evitare di usare grid. Penso che solo con flexbox e flex-wrap potevi riuscire a fare l'esercizio, facendo le varie modifiche nelle media queries. In questo modo hai scritto molte regole e diventa poi difficile fare modifiche."
